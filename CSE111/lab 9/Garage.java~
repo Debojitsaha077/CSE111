@@ -1,0 +1,73 @@
+public class Garage{
+  int bike_Cap, count2=0;
+  int car_Cap, count1=0;
+  String[] car= new car[carCap];
+  String[] Bike = new Bike [bike_Cap];
+  
+  public Garage(int carCap, int bike_Cap){
+    this.carCap = carCap;
+    this.bike_Cap= bike_Cap;
+    //System.out.println( );
+    System.out.println( "Car Capacity: "+car_Cap+"\nBike Capacity: "+bike_Cap  );
+  }
+  
+  public void addVehicle(Vehicle obj){
+    if(obj instanceof Car){
+      if(count <= car_Cap ){
+      car[count1]+= [Car]obj;
+      count1++;
+      System.out.println( "A "+obj.getBrand()+ " CAR has been added to the Garage");
+    }
+    else if(count> car_Cap){
+      System.out.println( "Can't add more Cars! Capacity: "+car_Cap);
+    }
+    }
+    else if(obj instanceof Bike){
+      if(count <= bike_Cap ){
+      bike[count2]+= [Bike]obj;
+      count2++;
+      System.out.println( "A "+obj.getBrand()+ " BIKE has been added to the Garage");
+    }
+    else if(count2> bike_Cap){
+      System.out.println( "Can't add more Bikes! Capacity: "+bike_Cap);
+    }
+  }
+    }
+  
+  
+  public void startAutoPilot(){
+    if(!Status){
+      System.out.println( getBrand()+":"+Car.nm+ " has NO AutoPilot");
+    }
+    else{
+      System.out.println( getBrand()+":"+Car.nm+ " AutoPilot Started");
+    }
+  }
+    
+  public void doAWheelie(){
+    if(!Status){
+      System.out.println("Wheelie Failed. "+ getBrand()+":"+Bike.nm+ " Wing has SideCar");
+    }
+    else{
+      System.out.println( getBrand()+":"+Car.nm+ " is doing Wheelie!!");
+    }
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      

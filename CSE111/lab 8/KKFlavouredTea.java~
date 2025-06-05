@@ -1,0 +1,16 @@
+public class KKFlavouredTea extends KKTea{
+  
+  int num2;
+  
+  public KKFlavouredTea(String name, int pc, int num2){
+    super(name, pc );
+    this.num2 = num2;
+  }
+  
+  public void updateSoldStatusFlavoured(KKFlavouredTea ob){
+    sell++;
+    sellF++;
+    status= true;
+  }
+}
+    

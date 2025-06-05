@@ -1,0 +1,19 @@
+public class Dog extends Animal{
+    String name,sound;
+    public Dog(){
+      System.out.println("The dog says hello!");
+}
+
+    public String getName(){
+      return name;
+}
+    
+    public void details(){
+      System.out.println("Name: "+ name+"\nLegs: "+legs+"Sound: "+ sound);
+}
+    
+    public void updateSound(String sound){
+      this.sound = sound;
+    }
+}
+      

@@ -1,0 +1,11 @@
+public class Course  {
+  //int count=0;
+  String course;
+  //String[] arr1 = new String[3];
+  
+  public Course(String course){
+    this.course= course;
+  }
+  
+}
+    

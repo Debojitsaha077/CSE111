@@ -1,0 +1,62 @@
+public class TaxiLagbe {
+  String name1, name2, city, num;
+  int tk,tk2, count=0;
+  int[] arr1 ;
+  
+  public void storeInfo(String num, String city){
+    this. num = num;
+    this. city = city;
+  }
+  
+  public void addPassenger(String name1, int tk){
+    this. name1 = name1;
+    this. tk = tk;
+    count++;
+    
+    int[] arr1 = new int[count];
+    this.arr1[i]= name1;
+    //this.arr1[i]= name2;
+    
+    System.out.println("Dear"+ name1+ "! Welcome to TaxiLagbe" );
+  }
+  
+  public void addPassenger(String name1, int tk,String name2, int tk2){
+    this. name1 = name1;
+    this. tk = tk;
+    this. name2 = name2;
+    this. tk2 = tk2;
+    count+=2;
+    
+    int[] arr1 = new int[count];
+    this.arr1[i]= name1;
+    this.arr1[i]= name2;
+    
+    System.out.println("Dear"+ name1+ "! Welcome to TaxiLagbe" );
+    System.out.println("Dear"+ name2+ "! Welcome to TaxiLagbe" );
+  }
+  
+  public void printDetails(){
+    System.out.println("Taxi number: "+ num+ "\n!This taxi can cover "+ city+ " area"+"\nTotal Passenger: "+ count+"\nPassenger Lists: " );
+    
+    for(int i=0; i<count; i++){
+      System.out.print(arr1[i]+" ");
+    }
+  }
+}
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

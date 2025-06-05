@@ -1,0 +1,16 @@
+public class Course {
+  
+  public String course;
+  public String code;
+  public int credit;
+  
+  public void updateDetails(course,code, credit){
+    this.course = course;
+    this.code = code;
+    this.credit = credit;
+    System.out.println("Course Name: "+ course +"\n"+"Course Code: "+"\n"+"Course Credit: "+ credit);
+  }
+}
+    
+      
+  

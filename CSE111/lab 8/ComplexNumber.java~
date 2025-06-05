@@ -1,0 +1,11 @@
+public class ComplexNumber extends RealNumber {
+  double iPart;
+  
+  public ComplexNumber(double realValue, double iPart){
+    super(realValue);
+  }
+  
+  public void toString(){
+    return "RealPart: " + realValue+ "\nImaginaryPart: "+ iPart;
+  }
+}

@@ -1,0 +1,9 @@
+public class Paladin  extends Warrior {
+  public Paladin(String nm, int lvl){
+    super(nm, lvl);
+  }
+  
+  public void specialMove(){
+    System.out.println(nm+ "performs a heavy sword slash");
+  }
+}

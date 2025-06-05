@@ -1,0 +1,17 @@
+public class Cricket_Tournament extends Tournament {
+ String name,type= "No type";
+ int num=0;
+ 
+  public String details(){
+    return"Cricket Tournament Name: "+ getName()+"\nNumber of Teams: "+num+"\nType: "+ type;
+  }
+  
+  public Cricket_Tournament (String name; int num; String type){
+    this.name= name;
+    this.num=num;
+    this. type= type;
+  }
+}
+  
+  
+    

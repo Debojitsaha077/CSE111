@@ -1,0 +1,6 @@
+public class ImaginaryNumber{
+  public int realPart= 0;
+  public int realPart= 0;
+  public String printNumber= realPart+ realPart+ "i";
+}
+  

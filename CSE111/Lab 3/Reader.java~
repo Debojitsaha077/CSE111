@@ -1,0 +1,30 @@
+public class Reader {
+  String name="New user", book;
+  int cap=0,count=0;
+  String[] arr1;
+  
+  public String createReader(String name, int cap){
+    this. name = name;
+    this. cap = cap;
+    this. arr1 = new String[cap];
+    return "A new reader is created!";
+  }
+  
+  public void readerInfo(){
+    if(count<cap){
+      System.out.println("Name: "+name+"\nCapacity: "+cap+"\nBooks: ");
+      for(int i = 0; i<count; i++){
+        System.out.println("Book "+ (count+1) " : "+arr1[i]);
+      }
+    }
+    else{
+      System.out.println("No more capacity");
+    }
+  }
+  
+  public void addBook(String book){
+    this.book = book;
+    arr1[count]= book;
+    count++;
+  }
+}

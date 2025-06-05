@@ -1,0 +1,144 @@
+public class Song{
+  String title;
+  String artist;
+  int length;
+  Song next;
+  
+  public Song(String title,String artist,int length){
+    this.title = title;
+    this.artist = artist;
+    this.length = length;
+    next = null;
+  }
+    
+    public void songInfo(){
+      System.out.println("Title: "+ title+ "\n"+"Artist: "+ artist+ "\n"+"Length: "+ length+ "\n");
+    }
+  }
+
+ 
+
+public class Playlist{
+  String plist;
+  
+  
+  
+//  Song next = null;
+  int count=0 ;
+  Song current = null;
+  Song start = null;
+  
+  
+  public Playlist(String plist){
+    this.plist = plist;
+    
+    System.out.println(plist + " created");
+  }
+  public void info()
+  {
+    System.out.println(plist+" has the following songs: ");
+    current = start;
+    int count1 = 1;
+    if(current == null)
+    {
+      System.out.println("No songs in "+plist);
+    }
+    else
+    {
+      while(current != null)
+      {
+        System.out.println("Song-"+count1+":");
+        System.out.println("Title: "+ current.title);
+        System.out.println("Artist: "+current.artist);
+        System.out.println("Length: "+current.length+" minutes");
+        current = current.next;
+        count1++;
+      } 
+    }
+  } 
+  
+  
+  public void addSong(Song lat_Song){
+    if(start == null)
+    {
+      start = lat_Song;
+      System.out.println(lat_Song.title+" added to "+plist);
+      count++;
+    }
+    else
+    {
+       current = start;
+       while(true)
+       {
+         if(current.next != null)
+         {
+           current = current.next;
+         }
+         else
+         {
+           current.next = lat_Song;
+           System.out.println(lat_Song.title+" added to "+plist);
+           count++;
+           break;
+         }
+       }
+    }
+  }
+  public void addSong(Song lat_Song, int index)
+  {
+    current = start;
+    
+    if(index == 0)
+    {
+      lat_Song.next = start;
+      start = lat_Song;
+      count++;
+      System.out.println(lat_Song.title+" added to "+plist);
+      
+      
+    }
+    else if(index > count)
+    {
+      System.out.println("Cannot add song to Index 10.");
+    }
+    else
+    {
+      Song t = start;
+      for(int i = 0; i < index-1; i++)
+      {
+        t = t.next;
+      }
+      Song s_t = t.next;
+      t.next = lat_Song;
+      lat_Song.next = s_t;
+      count++;
+      System.out.println(lat_Song.title+" added to "+ plist);
+    }
+  }
+  public void  playSong(String music)
+  {
+    current = start;
+    while(current != null )
+    {
+      String temp = current.title;
+      if(temp.equals(music))
+      {
+        System.out.println("Playing "+ music+ " by "+current.artist);
+        break;
+      }
+      else
+      {
+        if(current.next == null)
+        {
+          if(!temp.equals(music))
+          {
+          System.out.println(music+ " not found in " +plist);
+          }
+        }
+        current = current.next;
+      }
+    }
+  }
+  
+}
+  

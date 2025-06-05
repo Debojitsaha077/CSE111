@@ -1,0 +1,15 @@
+public class Book extends Product{
+  String sl;
+  String pub;
+  
+  
+  public Book(int id, String title, int price, String sl, String pub  ){
+    super(id, title, price);
+    this. sl= sl;
+    this.pub = pub;
+  }
+  
+  public String printDetail(){
+    return getIdTitlePrice() + " ISBN: "+ sl+ " Publisher: "+ pub;
+  }
+}

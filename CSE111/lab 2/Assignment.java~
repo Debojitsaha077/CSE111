@@ -1,0 +1,27 @@
+public class Assignment{
+  public int tasks=0 ;
+  public String difficulty = "null";
+  public boolean submission  = false;
+  
+  
+
+    public void printDetails (){
+      this.tasks= tasks;
+      this.difficulty =difficulty;
+      this.submission= submission;
+    System.out.println("Number of tasks: "+ course +"\n"+"Difficulty level:  "+code+"\n"+"Submission required: "+ credit);
+  }
+    
+    public String makeOptional (){
+      if(submission){
+        System.out.println("Assignment will not require submission");
+      }
+      else{
+        System.out.println("Submission is already not required");
+      }
+    }
+    return;
+}
+        
+  
+  

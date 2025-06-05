@@ -1,0 +1,65 @@
+public class BrowserHistory {
+  public staic int count=0;
+  int cap;
+  String[] cap ;
+  
+  
+  public chrome(cap){
+    this.cap = cap;
+    String[] cap = new String[cap];
+  }
+  
+  public visitWeb(String site){
+    if(cap>count){
+      cap[count]==site;
+      count ++;
+      
+      System.out.println("Visited: "+site);
+    }
+    else{
+       System.out.println("History is full. Cannot visit "+ site);
+    }
+  }
+  
+  public void showHistory(){
+    if(count>0){
+      System.out.println("Browser History: ");
+      for(int i=0;i<=cap;i++){
+        System.out.println(cap[i]);
+      }
+    }
+    else{
+      System.out.println("No web pages visited yet.");
+    }
+  }
+  
+  public void currentWeb(){
+    if(count>0){
+      System.out.println("Current web page: "+cap);
+    }
+    else{
+      System.out.println("You have not visited any website yet!");
+    }
+  }
+  
+  public void back(){
+    cap--;
+  }
+}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      

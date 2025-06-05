@@ -1,0 +1,25 @@
+public class KKTea extends Tea{
+  int weight, pr, num; 
+  public static int sell=0;sellR=0, sellF=0;
+  
+  public  KKTea (int pr, int num){
+    this.num = num;
+    super(KK Regular Tea, pr);
+  }
+  
+  public void productDetail(){
+    super.productDetail();
+    System.out.println("Weight: "+(num*2)+", Tea Bags: "+ num);
+  }
+  
+  public void totalSales(){
+    System.out.println("Total Sales: "+sell+ "\nKK Regular Tea: "+ sellR);
+  }
+  
+  public void updateSoldStatusRegular(KKTea obj){
+    sell++;
+    sellR++;
+    status= true;
+  }
+}
+  

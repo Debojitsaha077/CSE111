@@ -1,0 +1,41 @@
+//sq !,area, rectangle ,tri1 !,tri2 !
+
+public class Shape2D {
+  String shape= "Square";
+  int len= 5,hei,base,breadth;
+  double ar =0.0;
+    
+  
+  public sq(){
+    System.out.println("A "+shape+" has been created with "+"\nlength: "+len);
+  }
+  
+  public tri1(int hei , int base, String shape){
+    this.shape = shape;
+    System.out.println("A "+shape+" has been created with "+"\nheight: "+hei+"and base:"+base);
+  }
+  
+  public rectangle (int len , int breadth){
+    this.len = len;
+    System.out.println("A Rectangle has been created with "+"\nlength: "+len+"and breadth:"+breadth);
+  }
+  
+  public tri2(int hei , int base, int x){
+    System.out.println("A Triangle has been created with"+"\nthe following sides: "+hei+","+base+","+x);
+  }
+  
+  public void area(){
+    if(shape.equals("Square")){
+      ar = len*len;
+    }
+   else if(shape.equals("triangle")){
+      ar = 0.5* hei*base;
+    }
+   else if(shape.equals("Rectangle ")){
+      ar = len*breadth;
+    }
+    
+    this. ar = ar;
+    System.out.println("The area of the "+shape+"is: "+ar);
+  }
+}

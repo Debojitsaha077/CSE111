@@ -1,0 +1,15 @@
+public class SignatureCard  extends CreditCard {
+ rewardPoints= 200;
+  
+  
+  public SignatureCard (String nm, String ac ){
+    super(nm,ac);
+  }
+  
+  public void spendCash(int cash){
+     //super cardDetails();
+    this.rewardPoints= rewardPoints+ ((100*2)/cash);
+    super (rewardPoints);
+  }
+}
+    

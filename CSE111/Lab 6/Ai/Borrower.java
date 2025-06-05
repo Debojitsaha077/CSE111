@@ -1,0 +1,47 @@
+//public class Borrower{
+//  public static int book_count[] = {3, 3, 3};
+//  public static String book_name[] = {"Pather Panchali", "Durgesh Nandini", "Anandmath"};
+
+  public class Borrower {
+    public static int[] book_count = {3, 3, 3}; // Indexes: 0->Pather Panchali, 1->Durgesh Nandini, 2->Ananthmath
+    public static String[] book_name = {"Pather Panchali", "Durgesh Nandini", "Ananthmath"};
+    private String name;
+    private int[] borrowedBooks;
+
+    public Borrower(String name) {
+        this.name = name;
+        borrowedBooks = new int[book_name.length]; // Initializing borrowedBooks
+    }
+
+    public void borrowBook(int bookIndex) {
+        if(book_count[bookIndex] > 0) {
+            borrowedBooks[bookIndex]++;
+            book_count[bookIndex]--;
+        } else {
+            System.out.println("This book is not available.");
+        }
+    }
+
+    public void borrowDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Books Borrowed:");
+        for (int i = 0; i < borrowedBooks.length; i++) {
+            if (borrowedBooks[i] > 0) {
+                System.out.println(book_name[i]);
+            }
+        }
+        System.out.println();
+    }
+
+    public static int remainingBooks(int bookIndex) {
+        return book_count[bookIndex];
+    }
+
+    public static void bookStatus() {
+        System.out.println("Available Books:");
+        for (int i = 0; i < book_name.length; i++) {
+            System.out.println(book_name[i] + ": " + book_count[i]);
+        }
+        System.out.println();
+    }
+}

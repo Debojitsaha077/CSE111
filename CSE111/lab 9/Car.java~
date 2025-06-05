@@ -1,0 +1,22 @@
+public class Car extends Vehicle{
+  String nm ;
+  int door, wh;
+  boolean status;
+  
+  public Car(String com, String nm , int yr, int door, int wh, bolean status){
+    super(com, yr);
+    this.nm=nm;
+    this.door=door;
+    this.wh=wh;
+    this.status=status;
+    //System.out.println( );
+  }
+    
+    public String toString(){
+      System.out.print("Car " )
+      super.toString();
+      return "Model: "+ nm+ ", Doors: "+ door+ ", AI: "+ status;
+    }
+  }
+      
+    

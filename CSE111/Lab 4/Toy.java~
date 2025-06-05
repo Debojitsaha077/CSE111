@@ -1,0 +1,25 @@
+//Toy  , updatePrice, showPrice, updateName
+
+public class Toy{
+  String name;
+  int price;
+  public Toy(String name, int price){
+    System.out.println("A new toy has been made!");
+  }
+  
+  public void updatePrice(int price){
+    this.price = price;
+  }
+  
+    
+  public void updateName(String name){
+    this.name = name;
+    System.out.println("Changing old name: "+ name+"\nnew name: "+name);
+  
+  }
+  
+  
+  public void showPrice(){
+    System.out.println("price: "+ price+" Taka");
+  }
+}

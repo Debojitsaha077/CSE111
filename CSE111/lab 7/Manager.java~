@@ -1,0 +1,16 @@
+public class Manager extends SportsPerson {
+  int match_win, earn;
+  
+  public Manager (String team, String name, String role, int match){
+    super(team,name, role);
+    this. match = match;
+  }
+  
+  public void calculateRatio(){
+    this.earn= match_win * 1000;
+  }
+  
+  public void printDetails(){
+    System.out.println(getNameTeam() +"\nTeam Role: "+ role+ "\nTotal Win: "+match_win+"\nMatch Earning: "+earn+"k");
+  }
+}

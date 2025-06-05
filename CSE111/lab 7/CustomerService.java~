@@ -1,0 +1,33 @@
+public class CustomerService {
+  int cap,served=0,count=0;
+  String name;
+
+  
+  
+  public CustomerService(int cap){
+    this.cap =cap;
+    //if(cap>count){
+  }
+  
+  public void addCustomer(String name){
+    this.name= name;
+    count++;
+    if(cap>count ){
+      System.out.println("Added: "+ name);
+    }
+    else{
+      System.out.println("Queue is full. Cannot add "+ name);
+    }
+  }
+  
+  public void serveCustomer(){;
+    if(served<count ){
+      System.out.println("Serving : "+ name);
+    }
+    
+    else if(count==served ){
+      System.out.println("No customers to serve");
+    }
+    
+  }
+}

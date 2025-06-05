@@ -1,0 +1,25 @@
+public class Passenger {
+  private int no_of_passenger=0  ;
+  private double total_fare= 0.0  ;
+  private double dis;
+  private double fare,kg;
+  
+  public Passenger(String name, double dis){
+    this.name= name;
+    this. dis= dis;
+    this.fare= dis*20;
+    this.no_of_passenger++;
+  }
+  
+  public void storeBaggageWeight(double kg){
+    this.kg = kg;
+    this.fare= dis*20+ kg*10;
+  }
+  
+  public void passengerDetails(){
+    System.out.println("Total Passenger: "+ no_of_passenger+"\nTotal Fare: "+ fare+" TK");
+  }
+}
+  
+  
+  

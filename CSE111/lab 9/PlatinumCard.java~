@@ -1,0 +1,15 @@
+public class PlatinumCard extends CreditCard {
+ rewardPoints= 100;
+  
+  
+  public PlatinumCard(String nm, String ac ){
+    super(nm,ac);
+  }
+  
+  public void spendCash(int cash){
+     //super cardDetails();
+    this.rewardPoints= rewardPoints+ ((100*2)/cash);
+    super (rewardPoints);
+  }
+}
+    

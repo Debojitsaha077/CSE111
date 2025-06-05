@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class task1{
+    public static void main(String[]args){
+
+        Scanner sc = new Scanner(System.in);
+
+        
+        int sum = 0;
+        int max =0;
+        int min = 0;
+        int temp;
+        double avg;
+
+
+         for(int i=0; i<=10 ; i++){
+            int num1 = sc.nextInt();
+            if(num1>=0 && num1 %2 != 0){
+                count++;
+                sum += num1;
+                num1= temp;
+
+
+            }
+            if(num1> temp){
+                num1 = max;
+            }
+            else if(num1< temp){
+                num1 = min;
+            }
+
+            if(count >0){
+            avg = num1 / count;
+            }
+            else{
+                System.out.println("No odd positive numbers found");
+        
+            }
+         }
+
+         System.out.println("Sum" + sum);
+         System.out.println("Minimum " + min);
+         System.out.println("Maximum " + max);
+         System.out.println("Average " + avg);
+
+    }
+}

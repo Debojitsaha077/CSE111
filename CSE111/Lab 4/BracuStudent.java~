@@ -1,0 +1,45 @@
+public class BracuStudent {
+  String name, loc,home;
+    int cap,count=0;
+    boolean status;
+    //boolean status= false ;
+   // String[] arr1= new String[2];  
+    
+    public BracuStudent (String name, String home){
+      this. name= name;
+      this. home =home;
+      this. status = false ;
+     
+      //arr1[count]= name; 
+      //count++;    
+    }
+    
+    public void showDetails(){
+      System.out.println("Student Name: "+name+"\nLives in "+home+"\nHave Bus Pass? "+ status);
+      }
+    
+    public void getPass(){
+      this.status= true ;
+    }
+    
+    public void updateHome(String home){
+      this.home= home ;
+    }
+    
+    public String getName(){
+      return name ;
+    }
+    
+    public String getHome(){
+      return home ;
+    }
+    
+    public boolean getStatus(){
+      return status ;
+    }
+    
+}
+    
+    
+    
+    

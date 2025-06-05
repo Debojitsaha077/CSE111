@@ -1,0 +1,13 @@
+public void CSE111Student  extends Student{
+  public String msg = "I love Java Programming";
+  
+  public String shout(){
+    return msg;
+  }
+
+  public static void printShout(CSE111Student obj2){
+    System.out.println("------------------");
+    System.out.println(s.msg);
+    System.out.println(obj2.shout());
+  }
+}

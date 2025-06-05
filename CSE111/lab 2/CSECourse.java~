@@ -1,0 +1,5 @@
+public class CSECourse {
+  public courseName = "Programming Language II";
+  public courseCode = "CSE111";
+  public credit = 3;
+}

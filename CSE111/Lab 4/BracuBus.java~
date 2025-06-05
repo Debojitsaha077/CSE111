@@ -1,0 +1,104 @@
+public class BracuBus {
+  
+  String loc;
+  int count=0, cap=2;
+  BracuStudent[] arr1;
+  
+  public BracuBus(String loc){ 
+    this.loc = loc;
+    this. arr1= new BracuStudent[cap];
+  }
+  
+  public BracuBus(String loc, int cap){ 
+    this.loc = loc;
+    this.cap = cap;
+    this. arr1= new BracuStudent[cap];
+  }
+  public void showDetails(){
+    System.out.println("Bus Route: "+ loc+"\nPassenger Count: "+count+"(Max: "+cap+")\nPassengers on Board: ");
+    //arr1[count] = getName;
+    for(int i=0; i<count; i++){
+      System.out.print(arr1[i].getName()+" ");
+    }
+  }
+    
+     public void board(){ 
+         System.out.println("No passengers");
+  }
+    
+     public void board(BracuStudent obj1,BracuStudent obj2){
+       board(obj1);
+       board(obj2);
+  }
+     
+
+     public void board(BracuStudent obj){
+       if(cap<=count){
+         System.out.println("Bus is full!.");
+       }
+       else if(!obj.getStatus()){
+         System.out.println("You don't have a bus pass!");
+       }
+       else if(loc!=obj.getHome()){
+         System.out.println("You got on the wrong bus!");
+       }
+       else{
+       arr1[count]=obj;
+       count++;
+       System.out.println(obj.getName()+" boarded the bus.");
+     }
+}
+}
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+//     public void board(BracuStudent obj3,BracuStudent obj2){ 
+//       if(obj3.status== false&&obj2.status== false){
+//         
+//  
+//        if(obj3.loc!= home&&obj2.loc!= home){
+//         System.out.println("You don't have a bus pass!");
+//         System.out.println("You got on the wrong bus!");
+//  }
+//       }
+//       else if(obj3.status== true&&obj2.status== true){
+//         if(obj3.loc== home&&obj2.loc== home){
+//           System.out.println(obj3.name+" boarded the bus.");
+//           System.out.println(obj2.name+" boarded the bus.");
+//           if(count>=cap){
+//             System.out.println("Bus is full!.");
+//           }
+//         }
+//       }
+//     }
+//  }
+         
+       
+    
+  

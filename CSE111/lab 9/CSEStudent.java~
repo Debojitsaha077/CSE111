@@ -1,0 +1,13 @@
+public void CSEStudent   extends Student{
+  public String msg = "I want to transfer to CSE";
+  
+  public String shout(){
+    return msg;
+  }
+
+  public static void printShout(CSE111Student obj1){
+    System.out.println("------------------");
+    System.out.println(s.msg);
+    System.out.println(obj1.shout());
+  }
+}

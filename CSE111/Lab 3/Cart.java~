@@ -1,0 +1,65 @@
+public class Cart {
+  int cartNum, count=0;
+  double dis, sum, tk,total;
+  String name;
+  String[] arr1= new String[3];
+  int[] arr2= new int[3];
+  
+  public void create_cart(int cartNum){
+    this. cartNum= cartNum;
+  }
+  
+  public void addItem(String name, double tk ){
+    this. name= name;
+    this. tk= tk;
+    
+    if(count<=3){
+      arr1[count] = name;
+      System.out.println(name+" added to cart "+ cartNum+".\nYou have "+cartNum+" item(s) in your cart now.");
+      arr2[count] = tk ;
+      count++;   
+  }
+    else{
+      System.out.println("You already have 3 items on your cart");
+    }
+  }
+  
+    public void addItem( double tk, String name ){
+    this. name= name;
+    this. tk= tk;
+    
+    if(count<=3){
+      arr1[count] = name;
+      System.out.println(name+" added to cart "+ cartNum+".\nYou have "+cartNum+" item(s) in your cart now.");
+      arr2[count] = tk ;
+      count++;   
+  }
+    else{
+      System.out.println("You already have 3 items on your cart");
+    }
+  }
+  
+  public void cartDetails(){
+    System.out.println("Your cart(c"+cartNum+") :");
+    for(int i=0; i<count; i++){
+      sum+= arr2[i];
+      total= sum - (sum*dis);
+    System.out.println(arr1[i]+" - "+arr2[i]);
+    System.out.println("Discount Applied: "+ dis+"%\nTotal price: "+total);
+    
+  }
+  }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

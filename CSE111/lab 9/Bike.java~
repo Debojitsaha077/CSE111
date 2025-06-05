@@ -1,0 +1,19 @@
+public class Bike extends Vehicle{
+  String nm ;
+  int wh;
+  boolean status;
+  
+  public Car(String com, String nm , int yr, int wh, bolean status){
+    super(com, yr);
+    this.nm=nm;
+    this.wh=wh;
+    this.status=status;
+    //System.out.println( );
+  }
+    
+    public String toString(){
+      System.out.print("Bike " )
+      super.toString();
+      return "Model: "+ nm+ ", SideCar: "+ status;
+    }
+  }

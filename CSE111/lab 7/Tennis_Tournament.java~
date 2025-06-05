@@ -1,0 +1,12 @@
+public class Tennis_Tournament extends Tournament {
+  int player;
+  
+  public Tennis_Tournament (String name; int player){
+    this.name= name;
+    this.player=player;
+  }
+  
+  public String details(){
+    return"Tennis Tournament Name: "+ name+"\nNumber of Players: "+num+"\nType: "+ player;
+  }
+}

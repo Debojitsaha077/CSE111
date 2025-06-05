@@ -1,0 +1,31 @@
+1 public class A{
+2   public int temp = 3, sum = 9, y = 4, x = 0;
+3   public A(){
+4     int sum = 7;
+5     y = temp - 5;
+6     sum = temp + 2;
+7     temp-=2;
+8     this.x = sum + temp + y;
+9   }
+10   public A(int y, int temp){
+11     y = temp - 1 + x;
+12     sum = temp + 2 -x;
+13     temp-=2;
+14   }
+15   public void methodA(int m, int [] n){
+16     int x = 0;
+17     y = y + m + methodB(x,m);
+18     x = this.x + 2 + (++n[0]);
+19     sum = sum + x + y;
+20     n[0] = sum + 2;
+21     System.out.println(n[0] + " " + y+ " " + sum); 
+22   }
+23   public int methodB(int m, int n){   
+24     int [] y = {0};
+25     this.y = y[0] + this.y + m;
+26     x = this.y + 2 + temp - n;
+27     sum = x + y[0] + this.sum;
+28     System.out.println(y[0]+ " "+ temp + " " + sum);
+29     return y[0];
+30   }
+31 }

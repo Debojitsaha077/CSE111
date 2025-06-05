@@ -1,0 +1,19 @@
+public class UniversityTester{
+  public static void main (String[]args){
+    
+    //System.out.println();
+    
+    University n1 = new University();
+    University c1 = new University();
+    
+    n1.name;
+    c1.country;
+    
+    System.out.println(n1);
+    System.out.println(c1);
+    System.out.println(name);
+    System.out.println(country);
+  }
+}
+    
+    
